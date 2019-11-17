@@ -1,0 +1,17 @@
+img{
+	width: 100%;
+}
+
+ .image1{
+	background-image :url("res/1.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+
+
+
+.image2{
+	background-image: url("res/2.jpg"); 
+	background-size:contain; 
+	background-repeat: no-repeat;
+}
