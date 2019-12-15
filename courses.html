@@ -13,18 +13,63 @@
 	<center>
 	<h1 style="text-align:center;">courses</h1> 
 	<p style="text-align: center;">freedback</p>  
-	<button>B</button> 
-	<button>I</button> 
-	<button>Underline</button> 
-	<select>  
-			<option>20px</option>  
+	<button id="b" onclick="bold()">B</button>
+	<button id="i" onclick="Italic()">I</button> 
+	<button id="u" onclick="underline()">U</button> 
+	<select id="taille" onchange="changeSize()">  
+			<option value="20px">20px</option> 
+			<option value="40px">40px</option> 
+			<option value="60px">60px</option>  
+ 
 
 		</select>   
 	<select> 
-	<option>Arial</option> 
-</select>	
+	<option>Arial</option>      
+
+
+</select>   
+
+      <select id="input-font" class="input" onchange="changeFont()"> 
+         <option value="Times New Roman" selected ="selected">Times New Roman</option>   
+             <option value="Arial">Arial</option>
+
+      </select> 
+
+
 <br>
-	<textarea cols="50" rows="20"></textarea>
+	<textarea cols="50" rows="20" id="Mytext"></textarea>
 </center>
-</body>
+</body> 
+
+
+
+<script >   
+	function bold() {
+       document.getElementById("Mytext").style.fontWeight = 'bold';
+     }      
+
+     function Italic(){
+     	document.getElementById("Mytext").style.fontStyle= "italic";  
+     }     
+
+     function underline(){
+     	document.getElementById("Mytext").style.textDecoration="underline";
+     }   
+  
+     function changeFont(){
+                var e = document.getElementById("input-font");
+                var fontFamily=e.options[e.selectedIndex].value;
+                document.getElementById("Mytext").style.fontFamily = fontFamily; 
+            }  
+
+
+      function changeSize() {
+      	var e = document.getElementById("taille");
+		var size = e.options[e.selectedIndex].value;
+		document.getElementById("Mytext").style.fontSize = size;
+      }
+
+
+
+</script>
 </html>
