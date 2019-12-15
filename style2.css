@@ -1,24 +1,44 @@
 img{
 	width: 100%;
 }
-
- .image1{
-	background-image :url("res/1.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-	}
+body {
+	background :Linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+	Linear-gradient(127deg, black, black 70.71%),Linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
 
 
+li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
 
-.image2{
-	background-image: url("res/2.jpg"); 
-	background-size:contain; 
-	background-repeat: no-repeat;
-} 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: red;
-} 
+li a:hover:not(.active) {
+  color: red;
+}
+
+ h1{
+ 	color: white;
+ }
+
+.nav ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+.nav {
+	display: flex;
+}
+
+.nav li {
+	font-size:1.5em;
+	font-weight: bold;
+	text-transform:uppercase;
+	list-style-type: none;
+}
+.logo{ 	
+	width:50px;
+	height:50px; 
+ }
