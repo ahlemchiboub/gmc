@@ -49,7 +49,7 @@ li a:hover:not(.active) {
     height:230px;
     margin-left:50px;
     display:inline-block;
-    background-image:url(https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel.png)
+    background-image:url("./res/img3.png")
     
 }  
 
@@ -82,7 +82,7 @@ li a:hover:not(.active) {
 	height:230px; 
 	margin-left: 50px; 
 	display: inline-block; 
-	background-image:url(https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel1.png);
+	background-image:url("./res/img1.png");
  }  
  .c2:hover{
     background-color:black;
@@ -95,7 +95,7 @@ li a:hover:not(.active) {
  	height: 230px; 
  	margin-left: 50px; 
  	display: inline-block; 
- 	background-image:url(https://iyadhkhalfallah.github.io/checkpointsGMC/res/tracks/Objet%20dynamique%20vectoriel2.png);
+ 	background-image:url("./res/img2.png");
  }  
  .c3:hover{
     background-color:black;
