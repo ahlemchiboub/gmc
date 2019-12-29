@@ -1,4 +1,4 @@
-	var myString="hello"; 
+/*	var myString="hello"; 
 	var secondString="world"; 
 	alert(myString.toLowerCase()); 
 	alert(secondString.toUpperCase()); 
@@ -18,4 +18,23 @@
  console.log(getId); 
  console.log(getClass); 
  console.log(getParagraph);
+*/
+
+$(".c1").hover( 
+	function () {
+		$(".course1").toggleClass('course1Hover');
+	  }
+);   
+
+$(".c2").hover( 
+	function () {
+		$(".course2").toggleClass('course2Hover');
+	  }
+);    
+
+$(".c3").hover( 
+	function () {
+		$(".course3").toggleClass('course3Hover');
+	  }
+);
 
