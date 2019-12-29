@@ -37,4 +37,16 @@ $(".c3").hover(
 		$(".course3").toggleClass('course3Hover');
 	  }
 );
-
+$('.course1').click(function(event) {
+	event.preventDefault();
+	$(".modal").modal('show');
+  });
+  
+  $('.course2').click(function(event) {
+	event.preventDefault();
+	$(".modal").modal('show');
+  });  
+  $('.course3').click(function(event) {
+	event.preventDefault();
+	$(".modal").modal('show');
+  });
