@@ -50,3 +50,39 @@ $('.course1').click(function(event) {
 	event.preventDefault();
 	$(".modal").modal('show');
   });
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCrd0J3IKpuyxmUMhTNPlv8beLqNtobhG0",
+    authDomain: "glamour-e0d55.firebaseapp.com",
+    databaseURL: "https://glamour-e0d55.firebaseio.com",
+    projectId: "glamour-e0d55",
+    storageBucket: "glamour-e0d55.appspot.com",
+    messagingSenderId: "1088349208858",
+    appId: "1:1088349208858:web:40c72992658907863c6ca3",
+    measurementId: "G-1YKTG463YT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var messagesref= firebase.database().ref('myDatabase');   
+   function submitform(e){  
+	   e.preventDefault();  
+	   var name=document.getElementById('name').Value; 
+	   var track=document.getElementById('track').value; 
+	   var email=document.getElementById('email').value; 
+	   var phone=document.getElementById('phone').value;  
+	   saveMessage(name,track,email,phone);
+
+   }     
+
+   document.getElementById('contactform') addEventlistener('submit',submitform);
+   function saveMessage(name,track,email,phone);{ 
+   var newMessageRef=messagesRef.push(); 
+   newMessageRef.set({  
+	   name:name, 
+	   tack:track, 
+	   email:email,
+	   phone:phone, 
+   }); 
+   }

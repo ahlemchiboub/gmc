@@ -29,11 +29,11 @@
 		<form id="formc">
 			<div class="form-group">
 				<label for="exampleInputName">Name </label>
-				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your name">
+				<input type="text" class="form-control" id="name" placeholder="Your name">
 			</div>
 			<div class="form-group">
 				<label for="exampleInputName">Track </label>
-				<select class="form-control">
+				<select class="form-control" id="track">
 					<option>web</option>
 					<option>game</option>
 					<option>AI</option>
@@ -41,12 +41,12 @@
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email Address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+				<input type="email" class="form-control" id="email" placeholder="name@example.com">
 			</div>
 
 			<div class="form-group">
 				<label for="exampleInputEmail1">Phone Number</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your phone number">
+				<input type="email" class="form-control" id="phone" placeholder="Your phone number">
 			</div>
 			<button type="submit" class="btn btn-primary">Submit</button>
 
@@ -54,9 +54,14 @@
 		</form>
 	</center>
 
-
-
-
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+<script src="js/main.js"></script>
 </html>
