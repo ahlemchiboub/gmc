@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+
+
 </head>
-<body> 
-<div class="nav">
-	<img class="logo" src="res/logo.png" alt="logo" ></img>
+
+<body>
+	<div class="nav">
+		<img class="logo" src="res/logo.png" alt="logo"></img>
 		<ul class="links">
 			<li><a href="INDEX.html">home </a> </li>
-			<li><a href="COURSES.html">courses</a> </li> 
-			<li><a href="CONTACT.html">contact</a>  </li> 
+			<li><a href="COURSES.html">courses</a> </li>
+			<li><a href="CONTACT.html">contact</a> </li>
 		</ul>
-</div>
+	</div>
 	<center>
-	<h1 style="text-align:center;">contact</h1>   
-	<form>
-	<h2>name</h2> 
-	<br>  
-		 <input type="text" placeholder="Jhon Deo"> 
-		<br> 
-		<h2>track</h2>  
-		<br>
-		<select>  
-			<option>web</option> 
-		</select>  
-		<br>
-		<h2>Email adress</h2>   
-		<input type="text" > 
-		<br> 
-		<h2>phone number</h2> 
-		<input type="number" >  
-		<br> 
-		<input type="submit" value="submit"> 
-		<input type="submit" value="submit"> 
-	</form> 
-</center>
+		<h1 style="text-align:center;">contact</h1>
+		<form id="formc">
+			<div class="form-group">
+				<label for="exampleInputName">Name </label>
+				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your name">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputName">Track </label>
+				<select class="form-control">
+					<option>web</option>
+					<option>game</option>
+					<option>AI</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email Address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com">
+			</div>
 
-	
+			<div class="form-group">
+				<label for="exampleInputEmail1">Phone Number</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your phone number">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+
+		</form>
+	</center>
+
+
 
 
 </body>
+
 </html>

@@ -18,7 +18,7 @@ li a:hover:not(.active) {
 }
 
  h1{
- 	color: white;
+ 	color: white !important;
  }
 
 .nav ul {
@@ -130,3 +130,44 @@ li a:hover:not(.active) {
     opacity: 1;
 }    
 
+.navbar-inverted {
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
+#logo {
+	width: 50px;
+	height: 50px;
+}
+
+.navbar-nav {
+	margin-top: -35px !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar-nav li {
+	padding-right: 20px;
+}
+
+.navbar-nav a:hover {
+	background-color: transparent !important ;
+} 
+
+.item img {
+	width: 100%;
+	height:800px !important;
+}   
+h2{ 
+	color: white;
+}
+
+
+#formc {
+	width: 250px;
+}
+
+label {
+	color: white;
+}
